@@ -35,8 +35,12 @@
       color: white;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
     }
     button:hover { background: #e64a19; }
+    img.qr {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -48,11 +52,20 @@
       ar-modes="scene-viewer quick-look webxr"
       camera-controls
       auto-rotate
+      scale="0.3 0.3 0.3"
       poster="https://upload.wikimedia.org/wikipedia/commons/9/9a/Pizza_margherita_stu_spivack.jpg">
     </model-viewer>
 
     <h2>Margherita Pizza</h2>
     <p>Fresh mozzarella, basil, and tomato sauce baked to perfection.</p>
+    <p><strong>$12.99</strong></p>
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://192.168.1.7:8000" alt="QR Code to open AR Menu" />
+    <br>
+    <button onclick="alert('Order functionality coming soon!')">Order Now</button>
+  </div>
+</body>
+</html>
+ baked to perfection.</p>
     <p><strong>$12.99</strong></p>
 	<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://192.168.1.7:8000" />
 
@@ -60,3 +73,4 @@
   </div>
 </body>
 </html>
+
