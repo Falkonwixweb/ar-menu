@@ -45,16 +45,19 @@
 </head>
 <body>
   <div class="container">
-    <model-viewer 
-      src="models/pizza.glb"
-      alt="Delicious Pizza"
-      ar
-      ar-modes="scene-viewer quick-look webxr"
-      camera-controls
-      auto-rotate
-      scale="0.3 0.3 0.3"
-      poster="https://upload.wikimedia.org/wikipedia/commons/9/9a/Pizza_margherita_stu_spivack.jpg">
-    </model-viewer>
+ <model-viewer 
+  src="models/pizza.glb"
+  alt="Delicious Pizza"
+  ar
+  ar-modes="scene-viewer quick-look webxr"
+  camera-controls
+  auto-rotate
+  camera-orbit="0deg 75deg 2m"
+  field-of-view="30deg"
+  style="--poster-color: #eee; width: 100%; height: 400px;"
+  poster="https://upload.wikimedia.org/wikipedia/commons/9/9a/Pizza_margherita_stu_spivack.jpg">
+</model-viewer>
+
 
     <h2>Margherita Pizza</h2>
     <p>Fresh mozzarella, basil, and tomato sauce baked to perfection.</p>
@@ -73,4 +76,5 @@
   </div>
 </body>
 </html>
+
 
